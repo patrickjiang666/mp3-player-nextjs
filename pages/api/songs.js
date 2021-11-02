@@ -1,4 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+export const config = {
+    api: {
+        bodyParser: {
+            sizeLimit: '50kb'
+        }
+    }
+}
 
 export default function handler(req, res) {
     let songs = [];
